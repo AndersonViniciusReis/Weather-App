@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Weather App</title>
-
+<title>Weather App Moderno</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
 <div class="container">
 
-<h1>Previsão do Tempo</h1>
+  <h1>Previsão do Tempo</h1>
 
-<div class="search">
+  <div class="search">
+    <input id="cityInput" placeholder="Digite o nome da cidade">
+    <ul id="suggestions" class="suggestions"></ul>
+  </div>
 
-<input id="cityInput" placeholder="Digite o nome da cidade">
+  <button id="searchBtn">Buscar</button>
 
-<button id="searchBtn">Buscar</button>
-
-</div>
-
-<div class="weather-box" id="weatherBox">
-
-<h2 id="cityName"></h2>
-
-<p id="temperature"></p>
-
-<p id="description"></p>
-
-</div>
+  <div class="weather-box" id="weatherBox">
+    <div class="card">
+      <h2 id="cityName">Cidade</h2>
+      <div class="temp-desc">
+        <p id="temperature">-- °C</p>
+        <p id="description">--</p>
+      </div>
+      <div class="extra-info">
+        <p id="humidity"></p>
+        <p id="wind"></p>
+      </div>
+    </div>
+  </div>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
